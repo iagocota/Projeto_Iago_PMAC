@@ -1,0 +1,73 @@
+<!-- 
+PROJETO TELA DE LOGIN 
+AUTOR IAGO 
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<meta name="csrf-token" content="LJwojtH0vBUycT3sGgT8d9AnpebioICH0NKzrQvB">
+<title>PMAC - Sistema de Recursos Humanos</title>
+<link rel="stylesheet" href="css/style3.css">
+<script src="/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="/css/app.css">
+<script>
+        window.Laravel = {"csrfToken":"LJwojtH0vBUycT3sGgT8d9AnpebioICH0NKzrQvB"}    </script>
+</head>
+<body>
+<nav class="navbar navbar-fixed-top" style="background-color: #007cba;" id="header">
+<div class="container-fluid">
+<a class="navbar-brand  mx-auto " href="/">
+<div class="row no-gutters">
+<div class="col">
+<div class="card-block p-2 text-dark" style="width: 14rem;">
+<img src="img/01_logo_login.png" class="img-fluid" alt="brasão da polícia militar">
+</div>
+</div>
+</div>
+</a>
+</div>
+</nav>
+<div class="container-fluid">
+<div class="row">
+<div class="col  pt-4 mb-4" id="main">
+<div class="container">
+<div class="row">
+<div class="col-sm-7 col-md-7 col-lg-5 mx-auto">
+<h5 class="card-title text-center">Sistema de Recursos Humanos - SIRH</h5>
+<div class="card card-signin my-5">
+<div class="card-body">
+<p class="card-title text-center"><b>Acesso Restrito</b></p>
+<form class="form-signin" action="https://sirh.acre.seg.br/login" method="POST">
+<input type="hidden" name="_token" value="LJwojtH0vBUycT3sGgT8d9AnpebioICH0NKzrQvB">
+<div class="form-label-group">
+<label for="inputEmail" class="mb-1">Usuário</label>
+<input type="text" name="email" id="inputEmail" class="form-control" placeholder="Usuário" required autofocus>
+</div>
+<div class="form-label-group">
+<label for="inputSenha" class="mb-1 mt-3">Senha</label>
+<input type="password" name="password" id="inputSenha" class="form-control" placeholder="Senha" required>
+</div>
+<div class="custom-control custom-checkbox mb-3 mt-2">
+<input name="remember" type="checkbox" class="custom-control-input" id="customCheck1">
+<label class="custom-control-label" for="customCheck1">Permanecer conectado</label>
+</div>
+<button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Entrar</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="/js/app.js"></script>
+</body>
+</html>
